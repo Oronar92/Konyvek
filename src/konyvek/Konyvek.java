@@ -32,10 +32,22 @@ public class Konyvek {
                  ab.kiir(ev);
                  break;
              case '2':
-                 
+                 System.out.print("Szerző: ");
+                 szerzo = bill.nextLine();
+                 System.out.print("Cím: ");
+                 cim = bill.nextLine();
+                 System.out.print("Eredeti: ");
+                 eredeti = bill.nextLine();
+                 System.out.print("Év: ");
+                 ev = bill.nextInt();
+                 bill.nextLine();
+                 ab.uj(szerzo, cim, eredeti, ev);
                  break;
              case '3':
-                 
+                 System.out.print("Törlendő könyv azonosítója: ");
+                 int id = bill.nextInt();
+                 bill.nextLine();
+                 ab.torol(id);
                  break;
              default:
                  tovabb = false;
